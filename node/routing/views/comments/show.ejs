@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show comment</title>
+</head>
+
+<body>
+    <h2>Comment id: <%= comment.id %>
+    </h2>
+    <p>
+        <%= comment.comment %> - <b>
+                <%= comment.username %>
+            </b>
+    </p>
+    <a href="/comments"> <button>Back to comments</button> </a>
+    <a href="/commentS/<%= comment.id %>/edit "> <button>Edit comment</button> </a>
+</body>
+
+</html>

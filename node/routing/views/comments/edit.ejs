@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit comment </title>
+</head>
+
+<body>
+    <section>
+        <h1>Edit comment</h1>
+        <b>comment id: </b>
+        <%= comment.id %>
+    </section>
+
+    <!-- The query string has to be added with the specific type of request to be made, 
+    which will later be replaced -->
+
+    <!-- Here 
+_method=PATCH -->
+
+    <form action="/comments/<%= comment.id %>?_method=PATCH" method="post">
+        <textarea name="comment" id="" cols="30" rows="5">
+            <%= comment.comment %>
+        </textarea>
+        <br>
+        <button>Edit</button>
+    </form>
+</body>
+
+</html>

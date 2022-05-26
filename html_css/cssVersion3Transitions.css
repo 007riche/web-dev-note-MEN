@@ -1,0 +1,51 @@
+section {
+position: relative;
+top:10px;
+left:10px;
+background-color: rgb(179, 179, 179);
+width: 700px;
+height: 500px;
+border-radius: 15px;
+}
+
+div {
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+ 
+div#down {
+    background-color: aquamarine;
+    border: 3px solid blue;
+    border-radius: 50%;
+    position: relative;
+    top: 35%;
+    transition: top 0.15s ease-in-out;
+}
+
+div#down:active {
+    position: relative;
+    top: 75%;
+}
+div#up {
+    background-color: coral;
+    border: 3px solid rgb(199, 23, 0);
+    border-radius: 50%;
+    position: relative;
+    top: 35%;
+    transition: top 0.15s ease-in-out;
+}
+
+div#up:active {
+    position: relative;
+    top: 0%;
+}
+
+div#neutral {
+    background-color: rgb(255, 217, 0);
+    border: 3px solid rgb(206, 151, 0);
+    border-radius: 50%;
+    position: relative;
+    top: 35%;
+}

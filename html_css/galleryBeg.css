@@ -1,0 +1,20 @@
+img {
+    width: 30%;
+    height: 270px;
+    margin: calc(10%/6);
+    border: 2px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 5%;
+}
+
+nav {
+    font-family: "Lucida Handwriting";
+    text-transform: uppercase;
+    border-bottom: 7px solid #f1f1f1;
+    font-weight: bolder;
+    margin-left: calc(10%/6);
+    border-radius: 5px;
+    width: 29%;
+    font-size: 1.2em;
+    padding: 1em 0;
+}
